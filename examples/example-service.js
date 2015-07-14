@@ -2,10 +2,21 @@
 
 let Promise = require('bluebird');
 let Commons = require('./ut-commons');
+let Mongoose = require('mongoose');
 
 let async = Promise.coroutine;
 
 const configKey = 'bb-auth';
+
+let credSchema = {
+	emailAddress: String,
+	username: String,
+	password: String,
+	lastLogin: Date,
+	loginFailedAttempts: Number,
+	firstName: String,
+	lastName: String
+};
 
 module.exports = function(config) {
 	let self = this;
@@ -21,6 +32,9 @@ module.exports = function(config) {
 			group: 'auths'
 		}]
 	});
+
+	let Cred = Mongoose.model('Cred', credSchema);
+	let db = mongoose.Connect(config.db.endPoint);
 
 	service.on('ut-auth.login', msg => {
 		let username = msg.username;
