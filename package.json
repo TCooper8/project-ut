@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/TCooper8/project-ut/issues"
   },
-  "homepage": "https://github.com/TCooper8/project-ut#readme"
+  "homepage": "https://github.com/TCooper8/project-ut#readme",
+  "dependencies": {
+    "bluebird": "^2.9.33",
+    "bunyan": "^1.4.0",
+    "config": "^1.14.0",
+    "lodash": "^3.10.0",
+    "mongoose": "^4.0.7",
+    "node-uuid": "^1.4.3"
+  }
 }
