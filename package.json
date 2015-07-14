@@ -1,0 +1,19 @@
+{
+  "name": "project-ut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TCooper8/project-ut.git"
+  },
+  "author": "Tyler Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TCooper8/project-ut/issues"
+  },
+  "homepage": "https://github.com/TCooper8/project-ut#readme"
+}
