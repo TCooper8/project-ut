@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --harmony test/"
+    "test": "mocha --harmony ./test/"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
     "config": "^1.14.0",
     "lodash": "^3.10.0",
     "node-uuid": "^1.4.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
   }
 }
