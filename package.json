@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --harmony ./test/"
+    "test": "mocha --harmony --recursive test"
   },
   "repository": {
     "type": "git",

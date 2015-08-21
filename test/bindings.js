@@ -28,7 +28,6 @@ let bindWrite = BindModel({
 
 let bindRead = BindModel({
   log: Object,
-  write: Function,
   fileCache: {
     _type: Object,
     _default: () => Object()
@@ -50,10 +49,8 @@ describe('Binding some context to the model', () => {
 
     Promise.coroutine(function*() {
       yield bindLog(context);
-
-      yield bindWrite(context);
-
       yield bindRead(context);
+      yield bindWrite(context);
 
       console.log('Resulting context =>');
       console.dir(context);
