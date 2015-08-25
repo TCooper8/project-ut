@@ -21,7 +21,8 @@
     "bunyan": "^1.4.0",
     "config": "^1.14.0",
     "lodash": "^3.10.0",
-    "node-uuid": "^1.4.3"
+    "node-uuid": "^1.4.3",
+    "util": "^0.10.3"
   },
   "devDependencies": {
     "mocha": "^2.2.5"
